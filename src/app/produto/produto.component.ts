@@ -9,23 +9,18 @@ import { ProdutoService } from './produto.service';
 })
 export class ProdutoComponent implements OnInit {
  
-  mostrar ;
-  num=0;
+  
   
 
   constructor(private produtoservice : ProdutoService) {}
   localidades: Observable<any>;
   
   ngOnInit(): void {
-    this.mostrar = true;
-    this.num = this.num;
+    
     
       
       this.localidades = this.produtoservice.consultaUFs();
     
   }
-      exibir() {
-        this.mostrar = false;
-
-      }
+    
 }

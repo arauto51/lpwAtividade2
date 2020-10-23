@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class ProdutoService {
 
 
-private urlLocalidades = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.7386/dados?formato=json';
+private urlLocalidades = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
